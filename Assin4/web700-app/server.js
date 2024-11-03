@@ -105,12 +105,23 @@ app.use((req, res) => {
 });
 
 // Initialize data and start the server
+// collegeData.initialize()
+//     .then(() => {
+//         app.listen(HTTP_PORT, () => {
+//             console.log(`Server listening on port: ${HTTP_PORT}`);
+//         });
+//     })
+//     .catch((err) => {
+//         console.log(`Failed to initialize data: ${err}`);
+//     });
+
 collegeData.initialize()
     .then(() => {
-        app.listen(HTTP_PORT, () => {
-            console.log(`Server listening on port: ${HTTP_PORT}`);
-        });
+        console.log("Data initialized successfully");
     })
     .catch((err) => {
         console.log(`Failed to initialize data: ${err}`);
     });
+
+// Export the app for Vercel
+module.exports = app;

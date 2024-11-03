@@ -1,15 +1,27 @@
 {
-  "name": "web700-app",
+  "name": "web700",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "rushiraj pathak",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.1"
-  }
+    "express": "^4.21.1",
+    "vercel": "^37.14.0"
+  },
+  "description": "web700",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rushi6191996/Web700.git#main"
+  },
+  "keywords": [
+    "rushirajpathak"
+  ],
+  "bugs": {
+    "url": "https://github.com/Rushi6191996/Web700/issues"
+  },
+  "homepage": "https://github.com/Rushi6191996/Web700/tree/main#readme"
 }
